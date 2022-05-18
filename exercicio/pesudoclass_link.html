@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        /*SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */    
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: aqua;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*pseudo class*/
+
+        a:visited{
+            color: blueviolet;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        /*pseudo element*/
+
+        a::before{
+            content: '⍟';  /*simbolo do site erika sarti*/
+        }
+
+        a::after{
+            content: '⍟';
+        }
+  
+
+    </style>
+</head>
+<body>
+   <h1>Personalizando Links</h1>
+   <ul>
+       <li><a href="https://www.youtube.com.br" target="_blank">you tube</a></li>
+       <li><a href="https://www.liteci.info" target="_blank">Liteci</a></li>
+       <li><a href="https://www.google.com.br" target="_blank">Google</a></li>
+   </ul>
+
+    </div>    
+</body>
+</html>
