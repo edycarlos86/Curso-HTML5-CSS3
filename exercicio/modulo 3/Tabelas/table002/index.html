@@ -21,6 +21,13 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -45,10 +52,11 @@
     --> 
     
     <table>
+        <caption>População de Alguns Estados Nordestinos</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px ;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -70,7 +78,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>37.580.34</strong></td>
         </tfoot>
     </table>
