@@ -14,6 +14,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -31,6 +32,26 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead >tr >th {  /* deixa fixo o topo da tabela */
+            position: sticky;
+            background-color: gray;
+            top: -1px;
+
+        }
+
+        tbody > tr:nth-child(2n) { /* pseudo class que pula linha, neste caso cada 2 linha ele coloca esta cor < tambem pode-se usar as palavras par(even) e impar(odd)> 
+        
+        Exemplo zebra 
+        
+        tbdoy > tr:nth-chid(odd){
+            background-color: orange;
+            
+        tbody > tr:nth-chid(even) {
+            background-color: yellow;
+        }    */
+            background-color: rgb(240, 215, 170);
         }
 
         td.num {
@@ -75,6 +96,81 @@
             <tr>
                 <td>Paraíba</td>
                 <td class="num">4.018.127</td>
+            </tr><tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.018.127</td>
+            </tr><tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.018.127</td>
+            </tr><tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.018.127</td>
+            </tr><tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.018.127</td>
+            </tr><tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.018.127</td>
             </tr>
         </tbody>
         <tfoot>
@@ -82,6 +178,15 @@
             <td class="num"><strong>37.580.34</strong></td>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At perspiciatis labore, iure nihil unde, commodi officiis nam molestiae reiciendis beatae fuga consequuntur vel. Officiis facere voluptatem alias minus beatae quis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolores odio eos voluptates adipisci laboriosam doloremque tempore, culpa excepturi est incidunt amet ex ratione autem laborum cupiditate quo vitae voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, neque magni. Facilis sit numquam sed perferendis placeat quod soluta quis nobis ea cum quos praesentium doloremque facere, assumenda voluptatibus culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem aliquid iste maiores, enim laborum earum, porro quisquam nihil error expedita temporibus dolore quas amet pariatur blanditiis repudiandae! Vero, pariatur delectus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero perspiciatis magni ullam iusto architecto voluptates similique libero quibusdam, eius culpa ut exercitationem ipsam. Distinctio quaerat sint temporibus, itaque dicta veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad beatae vitae consectetur accusantium possimus magnam perspiciatis impedit qui! Animi sit perferendis illum enim culpa repellat quibusdam odit delectus sed!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At perspiciatis labore, iure nihil unde, commodi officiis nam molestiae reiciendis beatae fuga consequuntur vel. Officiis facere voluptatem alias minus beatae quis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolores odio eos voluptates adipisci laboriosam doloremque tempore, culpa excepturi est incidunt amet ex ratione autem laborum cupiditate quo vitae voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, neque magni. Facilis sit numquam sed perferendis placeat quod soluta quis nobis ea cum quos praesentium doloremque facere, assumenda voluptatibus culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem aliquid iste maiores, enim laborum earum, porro quisquam nihil error expedita temporibus dolore quas amet pariatur blanditiis repudiandae! Vero, pariatur delectus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero perspiciatis magni ullam iusto architecto voluptates similique libero quibusdam, eius culpa ut exercitationem ipsam. Distinctio quaerat sint temporibus, itaque dicta veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad beatae vitae consectetur accusantium possimus magnam perspiciatis impedit qui! Animi sit perferendis illum enim culpa repellat quibusdam odit delectus sed!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At perspiciatis labore, iure nihil unde, commodi officiis nam molestiae reiciendis beatae fuga consequuntur vel. Officiis facere voluptatem alias minus beatae quis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolores odio eos voluptates adipisci laboriosam doloremque tempore, culpa excepturi est incidunt amet ex ratione autem laborum cupiditate quo vitae voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, neque magni. Facilis sit numquam sed perferendis placeat quod soluta quis nobis ea cum quos praesentium doloremque facere, assumenda voluptatibus culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem aliquid iste maiores, enim laborum earum, porro quisquam nihil error expedita temporibus dolore quas amet pariatur blanditiis repudiandae! Vero, pariatur delectus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero perspiciatis magni ullam iusto architecto voluptates similique libero quibusdam, eius culpa ut exercitationem ipsam. Distinctio quaerat sint temporibus, itaque dicta veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad beatae vitae consectetur accusantium possimus magnam perspiciatis impedit qui! Animi sit perferendis illum enim culpa repellat quibusdam odit delectus sed!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At perspiciatis labore, iure nihil unde, commodi officiis nam molestiae reiciendis beatae fuga consequuntur vel. Officiis facere voluptatem alias minus beatae quis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolores odio eos voluptates adipisci laboriosam doloremque tempore, culpa excepturi est incidunt amet ex ratione autem laborum cupiditate quo vitae voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, neque magni. Facilis sit numquam sed perferendis placeat quod soluta quis nobis ea cum quos praesentium doloremque facere, assumenda voluptatibus culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem aliquid iste maiores, enim laborum earum, porro quisquam nihil error expedita temporibus dolore quas amet pariatur blanditiis repudiandae! Vero, pariatur delectus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero perspiciatis magni ullam iusto architecto voluptates similique libero quibusdam, eius culpa ut exercitationem ipsam. Distinctio quaerat sint temporibus, itaque dicta veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad beatae vitae consectetur accusantium possimus magnam perspiciatis impedit qui! Animi sit perferendis illum enim culpa repellat quibusdam odit delectus sed!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At perspiciatis labore, iure nihil unde, commodi officiis nam molestiae reiciendis beatae fuga consequuntur vel. Officiis facere voluptatem alias minus beatae quis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolores odio eos voluptates adipisci laboriosam doloremque tempore, culpa excepturi est incidunt amet ex ratione autem laborum cupiditate quo vitae voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, neque magni. Facilis sit numquam sed perferendis placeat quod soluta quis nobis ea cum quos praesentium doloremque facere, assumenda voluptatibus culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem aliquid iste maiores, enim laborum earum, porro quisquam nihil error expedita temporibus dolore quas amet pariatur blanditiis repudiandae! Vero, pariatur delectus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero perspiciatis magni ullam iusto architecto voluptates similique libero quibusdam, eius culpa ut exercitationem ipsam. Distinctio quaerat sint temporibus, itaque dicta veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad beatae vitae consectetur accusantium possimus magnam perspiciatis impedit qui! Animi sit perferendis illum enim culpa repellat quibusdam odit delectus sed!</p>
     
 </body>
 </html>
