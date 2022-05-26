@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }     
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col.cnome {
+            background-color: aquamarine;
+        }
+
+        col.cgrupo {
+            background-color: peachpuff;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela colgroup, mudar a cor da coluna de uma vez</h1>
+
+    <table>
+        <colgroup>
+            <!--<col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof"> -->
+
+            <col class="cnome">
+            <col class="cgrupo" span="3">  <!-- Desta forma a coluna 1 fica verde e as 3 seguintes sera laranja -->           
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Antônio Neto</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Suporte Técnico</td>
+        </tr>
+        <tr>
+            <td>Edy Carlos</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Dev</td>
+        </tr>
+        <tr>
+            <td>José Ribamar</td>
+            <td>M</td>
+            <td>39</td>
+            <td>Suporte Posto</td>
+        </tr>
+        <tr>
+            <td>Webson Carlos</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Suporte Fámacia</td>
+        </tr>
+        <tr>
+            <td>Maverton</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Manutenção</td>
+        </tr>
+        <tr>
+            <td>Anderson</td>
+            <td>M</td>
+            <td>36</td>
+            <td>Arquivo Fiscal</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
