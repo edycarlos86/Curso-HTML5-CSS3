@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'fonteLogo';
+    src: url('../_fonts/bubblegum-sans-regular.otf');
+}
 
 body {
     background-color: #dddddd;            
@@ -20,7 +24,32 @@ p{
 header#cabecalho img#icone {
     position: absolute;
     left: 800px;
-    top:50px ;
+    top:70px ;
+}
+
+header#cabecalho {
+    border-bottom: 1px solid #606060;
+    height: 150px;
+    background-image: url('../_imagens/glass-logo-peq.jpg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+header#cabecalho h1{
+    font-family: fontelogo, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888888;
+    font-size: 15pt; 
+    padding: 0px;
+    margin-top: 0px;
 }
 
 figure.foto-legenda {
@@ -89,4 +118,39 @@ nav#menu a {
 
 nav#menu a:hover {
     color: #ffffff;
+}
+
+/* formatando section e aside*/
+
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 20px;
+}
+
+
+aside#lateral{
+    display: block;
+    width:350px ;
+    float: right;
+}
+
+footer {
+    clear: both;
+    border-top: 1px solid #606060;
+    text-align: center;
+
+}
+
+table#tabelaspec td{
+    border: 1px solid #606060;
+    
+}
+
+table#tabelaspec{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+   margin: auto;
 }
