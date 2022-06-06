@@ -5,11 +5,12 @@
 }
 
 body {
-    background-color: #dddddd;            
+    background-color: #dddddd; 
+    font-family: Arial, Helvetica, sans-serif;           
 }
 
 main#interface {
-    width: 900px;
+    width: 910px;
     background-color: white;
     margin: -20px auto 0px auto;
     box-shadow: 0px 0px 10px black;
@@ -19,6 +20,15 @@ main#interface {
 p{
     text-align: justify;
     text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header#cabecalho img#icone {
@@ -127,14 +137,68 @@ section#corpo {
     width: 500px;
     float: left;
     border-right: 1px solid #606060;
-    padding-right: 20px;
+    padding-right: 15px;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+   font-family: 'fontelogo', sans-serif;
+   font-size: 20pt;
+   color: #606060; 
+   margin-bottom: 0px;
+   margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: white;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12pt;
+    color: #606060;
+}
+
+.direita {
+    text-align: right;
 }
 
 
 aside#lateral{
     display: block;
-    width:350px ;
+    width:368px ;
     float: right;
+    background-color: #ece6e6;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
+}
+
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: white;
+    padding: 5px;
 }
 
 footer {
@@ -144,13 +208,36 @@ footer {
 
 }
 
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+span {
+    display: block;
+    float: right;
+    font-family: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
 table#tabelaspec td{
     border: 1px solid #606060;
-    
+    padding: 10px;
+    text-align: left;
+    background-color: #cecece;    
+}
+
+table#tabelasepc > tr,th {
+    background-color: #606060;
+    color: white;
+    vertical-align: top;    
 }
 
 table#tabelaspec{
     border: 1px solid #606060;
     border-spacing: 0px;
-   margin: auto;
+    margin: auto;
 }
+
