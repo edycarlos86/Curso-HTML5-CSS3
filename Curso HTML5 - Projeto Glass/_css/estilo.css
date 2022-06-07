@@ -136,7 +136,7 @@ section#corpo {
     display: block;
     width: 500px;
     float: left;
-    border-right: 1px solid #606060;
+    border-right: 2px solid #606060;
     padding-right: 15px;
     background-color: white;
     padding: 10px;
